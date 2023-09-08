@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="workshop">
+  <property environment="env" />
+  <property name="DLC" value="${env.DLC}" />
+
+  <taskdef resource="PCT.properties">
+    <classpath location="${DLC}/pct/PCT.jar" />
+  </taskdef>
+  <ProgressVersion dlcHome="${DLC}" fullVersion="dlc.version.full" />
+  <echo message="${dlc.version.full}" />
+  <PCTVersion />
+
+  <target name="db">
+    <mkdir dir="target/db" />
+    <sports2000 destDir="target/db" dbName="sports2000" dlcHome="${DLC}" />
+  </target>
+
+</project>
