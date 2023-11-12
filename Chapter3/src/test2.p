@@ -18,11 +18,11 @@ oResponse = oClient:Execute(oRequest).
 if oResponse:StatusCode <> 200 then
     return error "Request Error: " + string(oResponse:StatusCode).
 else do:
-    message string(oResponse:StatusCode) + " -- " + oResponse:StatusReason.
+    message string(oResponse:StatusCode) + " -- " + oResponse:StatusReason view-as alert-box.
     output to "target/output.html".
     put unformatted oResponse:entity.
     output close.
-    message "target/output.html written".
+    message "target/output.html written" view-as alert-box.
 end.
 
 // OpenEdge.Core

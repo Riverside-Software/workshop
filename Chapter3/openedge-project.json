@@ -9,7 +9,8 @@
       "path": "src",
       "type": "source",
       "build": "target/build"
-    },{
+    },
+    {
       "path": "${DLC}/tty/openedge.core.pl",
       "type": "propath",
       "documentation": "C:\\workshop\\corelib.json"
@@ -61,4 +62,4 @@
       }
     }
   ]
- }
+}
