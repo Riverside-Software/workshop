@@ -1,0 +1,154 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "My TTY Application",
+            "type": "process",
+            "command": "/path/to/nowhere",
+            "args": [
+                "-basekey",
+                "INI",
+                "-ininame",
+                "conf/empty.ini",
+                "-db",
+                "sports2000",
+                "-H",
+                "localhost",
+                "-S",
+                "12345",
+                "-cpinternal",
+                "iso8859-15",
+                "-p",
+                "test2.p"
+            ],
+            "windows": {
+                "command": "C:\\Progress\\OpenEdge-12.8\\bin\\_progres.exe"
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "new",
+                "focus": true
+            },
+            "options": {
+                "env": {
+                    "DLC": "C:\\Progress\\OpenEdge-12.8",
+                    "PROPATH": "target/build,C:\\Progress\\OpenEdge-12.8\\tty\\netlib\\openedge.net.pl,C:\\Progress\\OpenEdge-12.8\\tty\\openedge.core.pl"
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "My GUI Application",
+            "type": "process",
+            "command": "/path/to/nowhere",
+            "args": [
+                "-basekey",
+                "INI",
+                "-ininame",
+                "conf/gui.ini",
+                "-db",
+                "sports2000",
+                "-H",
+                "localhost",
+                "-S",
+                "12345",
+                "-cpinternal",
+                "iso8859-15",
+                "-p",
+                "test2.p",
+                "-nosplash"
+            ],
+            "windows": {
+                "command": "C:\\Progress\\OpenEdge-12.8\\bin\\prowin.exe"
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "new",
+                "focus": true
+            },
+            "options": {
+                "env": {
+                    "DLC": "C:\\Progress\\OpenEdge-12.8"
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "My GUI Application - Debugger",
+            "type": "process",
+            "command": "/path/to/nowhere",
+            "args": [
+                "-basekey",
+                "INI",
+                "-ininame",
+                "conf/gui.ini",
+                "-db",
+                "sports2000",
+                "-H",
+                "localhost",
+                "-S",
+                "12345",
+                "-cpinternal",
+                "iso8859-15",
+                "-p",
+                "test2.p",
+                "-nosplash",
+                "-debugReady",
+                "3099"
+            ],
+            "windows": {
+                "command": "C:\\Progress\\OpenEdge-12.8\\bin\\prowin.exe"
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "new",
+                "focus": true
+            },
+            "options": {
+                "env": {
+                    "DLC": "C:\\Progress\\OpenEdge-12.8"
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "My TTY Application - Debugger",
+            "type": "process",
+            "command": "/path/to/nowhere",
+            "args": [
+                "-basekey",
+                "INI",
+                "-ininame",
+                "conf/gui.ini",
+                "-db",
+                "sports2000",
+                "-H",
+                "localhost",
+                "-S",
+                "12345",
+                "-cpinternal",
+                "iso8859-15",
+                "-p",
+                "test2.p",
+                "-nosplash",
+                "-debugReady",
+                "3099"
+            ],
+            "windows": {
+                "command": "C:\\Progress\\OpenEdge-12.8\\bin\\_progres.exe"
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "new",
+                "focus": true
+            },
+            "options": {
+                "env": {
+                    "DLC": "C:\\Progress\\OpenEdge-12.8",
+                    "PROPATH": "target/build,C:\\Progress\\OpenEdge-12.8\\tty\\netlib\\openedge.net.pl,C:\\Progress\\OpenEdge-12.8\\tty\\openedge.core.pl"
+                }
+            },
+            "problemMatcher": []
+        }
+    ]
+}

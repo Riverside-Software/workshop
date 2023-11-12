@@ -1,0 +1,51 @@
+{
+  "activeRules": [
+    {
+      "name": "UnusedVariable",
+      "repository": "rssw-oe-main",
+      "class": "eu.rssw.antlr.proparse.checks.UnusedVariable",
+      "parameters": [
+        {
+          "name": "skipSharedVars",
+          "value": false
+        },
+        {
+          "name": "skipVarInFrames",
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "VariableAssignedButNotRead",
+      "repository": "rssw-oe-main",
+      "class": "eu.rssw.antlr.proparse.checks.VariableAssignedButNotRead"
+    },
+    {
+      "name": "VariableReadButNotAssigned",
+      "repository": "rssw-oe-main",
+      "class": "eu.rssw.antlr.proparse.checks.VariableReadButNotAssigned"
+    },
+    {
+      "name": "ExpressionNoEffect",
+      "repository": "rssw-oe-main",
+      "class": "eu.rssw.antlr.proparse.checks.ExpressionNoEffect",
+      "parameters": [
+        {
+          "name": "reportComHandleAttributes",
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "NoUndo",
+      "repository": "rssw-oe-main",
+      "class": "eu.rssw.antlr.proparse.checks.NoUndo",
+      "parameters": [
+        {
+          "name": "requireExplicitNoUndo",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

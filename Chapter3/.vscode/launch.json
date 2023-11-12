@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to ABL process",
+      "type": "abl",
+      "request": "attach",
+      "hostname": "localhost",
+      "mode": "legacy",
+      "port": 3099,
+      "pause": true,
+      "localRoot": "${workspaceFolder}"
+    }
+  ]
+}

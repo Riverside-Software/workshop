@@ -1,4 +1,65 @@
 {
   "name": "Chapter3",
-  "version": "1.0"
+  "version": "1.0",
+  "oeversion": "12.8",
+  "graphicalMode": false,
+  "charset": "utf-8",
+  "buildPath": [
+    {
+      "path": "src",
+      "type": "source",
+      "build": "target/build"
+    },
+    {
+      "path": "${DLC}/tty/openedge.core.pl",
+      "type": "propath",
+      "documentation": "C:\\workshop\\corelib.json"
+    },
+    {
+      "path": "${DLC}/tty/netlib/openedge.net.pl",
+      "type": "propath",
+      "documentation": "C:\\workshop\\netlib.json"
+    }
+  ],
+  "dbConnections": [
+    {
+      "name": "sp2k",
+      "connect": "-db target/db/sports2000 -ld sp2k -RO",
+      "schemaFile": "dump/sports2000.df",
+      "aliases": [
+        "sports"
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "name": "GUI",
+      "inherits": "default",
+      "value": {
+        "graphicalMode": true,
+        "extraParameters": "-assemblies .",
+        "buildPath": [
+          {
+            "path": "src",
+            "type": "source",
+            "build": "target/build-gui"
+          },
+          {
+            "path": "c:\\workshop\\dependency",
+            "type": "propath"
+          },
+          {
+            "path": "${DLC}/gui/openedge.core.pl",
+            "type": "propath",
+            "documentation": "C:\\workshop\\corelib.json"
+          },
+          {
+            "path": "${DLC}/gui/netlib/openedge.net.pl",
+            "type": "propath",
+            "documentation": "C:\\workshop\\netlib.json"
+          }
+        ]
+      }
+    }
+  ]
 }
